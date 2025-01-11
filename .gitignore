@@ -12,7 +12,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # Sistema operativo
-.DS_Store  # macOS
 Thumbs.db  # Windows
 
 # Archivos temporales
