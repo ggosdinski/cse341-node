@@ -1,0 +1,91 @@
+# GET all users
+GET http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+###
+
+# GET single user by ID (user 1)
+GET http://localhost:3000/users/6782941c5dee2497a18ea49c HTTP/1.1
+Content-Type: application/json
+
+###
+
+# POST create a new user
+POST http://localhost:3000/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@example.com",
+  "favoriteColor": "blue",
+  "birthday": "1990-01-01"
+}
+
+###
+
+# PUT update an existing user by ID (user 1)
+PUT http://localhost:3000/users/6782941c5dee2497a18ea49c HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "email": "jane.doe@example.com",
+  "favoriteColor": "red",
+  "birthday": "1992-02-02"
+}
+
+###
+
+# PUT update an existing user by ID (user 2)
+PUT http://localhost:3000/users/6782941c5dee2497a18ea49d HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Mike",
+  "lastName": "Smith",
+  "email": "mike.smith@example.com",
+  "favoriteColor": "green",
+  "birthday": "1985-06-15"
+}
+
+###
+
+# PUT update an existing user by ID (user 3)
+PUT http://localhost:3000/users/6782941c5dee2497a18ea49f HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Alice",
+  "lastName": "Johnson",
+  "email": "alice.johnson@example.com",
+  "favoriteColor": "yellow",
+  "birthday": "1990-09-09"
+}
+
+###
+
+# DELETE remove a user by ID (user 1)
+DELETE http://localhost:3000/users/6782941c5dee2497a18ea49c HTTP/1.1
+Content-Type: application/json
+
+###
+
+# DELETE remove a user by ID (user 2)
+DELETE http://localhost:3000/users/6782941c5dee2497a18ea49d HTTP/1.1
+Content-Type: application/json
+
+###
+
+# DELETE remove a user by ID (user 3)
+DELETE http://localhost:3000/users/6782941c5dee2497a18ea49f HTTP/1.1
+Content-Type: application/json
+
+###
+
+# DELETE remove a user by ID (new contact)
+DELETE http://localhost:3000/users/678c7668cda818b1115aa99f HTTP/1.1
+Content-Type: application/json
+
+###
